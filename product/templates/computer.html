@@ -16,6 +16,15 @@
             justify-content: center;
         }
         </style>
+        <table>
+          <form method="POST">
+              {% csrf_token %}
+          {{c}}
+          <tr>
+              <td><button>Submit</button></td>
+          </tr>
+          </form>
+          </table>
     <div class="container">
         <h1 class="text-center mt-5">COMPUTERS</h1>
     <div class="row items mt-5">
